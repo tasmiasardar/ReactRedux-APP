@@ -1,0 +1,23 @@
+Detailed Explanation of Optimizations
+
+1) Redux for Global State Management:
+
+Replaced useState with Redux to manage weather data globally, ensuring consistent state across components and simplifying state updates.
+
+2) React Performance Optimizations:
+
+Memoization: Used React.memo to prevent unnecessary re-renders of components that do not depend on changing props.
+
+Lazy Loading: Implemented React.lazy and Suspense to load components only when needed, reducing initial load time.
+
+3) Paginated API Requests:
+
+Implemented pagination to fetch weather data in chunks, improving performance and user experience by loading data incrementally.
+
+4) Debounced Search Input:
+
+Added a debounce function to delay API calls until the user stops typing, reducing the number of requests and improving performance.
+
+5) Dark Mode Toggle:
+
+Used useContext to manage theme state, allowing users to switch between light and dark modes seamlessly.
